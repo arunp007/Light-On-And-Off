@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On And Of</title>
+    <style>
+        img{
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .lighton{
+            width: 100px;
+            background-color: green;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .lightoff{
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+
+        .container{
+            padding-bottom: 700px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="bg">
+        <img src="https://i.ibb.co/4gLYqqb/off.png" id="blub"  width="150px">
+        <br><br><button type="submit" onclick="light(1)" class="lighton">Light On</button>
+        <button type="submit" onclick="light(0)" class="lightoff">Light Off</button>
+    </div>
+
+    <script>
+        function light(sw){
+            var pic
+            var bg = document.getElementById('bg')
+            if(sw == 0){
+                pic = "https://i.ibb.co/4gLYqqb/off.png"
+            }
+
+            else{
+                pic = "https://i.ibb.co/z7gX2GX/on.png"
+
+            }
+
+            if(sw == 1){
+                bg.style.backgroundColor="black"
+            }
+            if(sw == 0){
+                bg.style.backgroundColor="white"
+            }
+            document.getElementById('blub').src = pic
+        }
+    </script>
+    
+</body>
+</html>
