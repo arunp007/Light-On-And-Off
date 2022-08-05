@@ -2,11 +2,11 @@ function light(sw){
     var pic
     var bg = document.getElementById('bg')
     if(sw == 0){
-        pic = "https://i.ibb.co/4gLYqqb/off.png"
+        pic = "https://i.ibb.co/z7gX2GX/on.png"
     }
 
     else{
-        pic = "https://i.ibb.co/z7gX2GX/on.png"
+        pic = "https://i.ibb.co/4gLYqqb/off.png"
 
     }
 
